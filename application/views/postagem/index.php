@@ -1,4 +1,6 @@
-<?=anchor('postagem-novo','Nova Postagem'); ?>
+
+<?=anchor('postagem-novo','Nova postagem');?>
+
 
 <?php if ($postagens == FALSE): ?>
     <h3>Nenhuma postagem encontrada</h3>
@@ -7,6 +9,8 @@
         <thead>
             <tr>
                 <th>Título</th>
+                <th>...</th>
+                <th>...</th>
             </tr>
         </thead>
         <tbody>
@@ -14,7 +18,8 @@
                 <tr>
                     <td><?=$postagem['titulo']?></td>
                     <td><?=anchor('postagem-visualizar/'.$postagem['id'],'Visualizar'); ?> </td>
-
+                    <td><?=anchor('postagem-editar/'.$postagem['id'],'Editar'); ?> </td>
+                    <td><?=anchor('postagem-excluir/'.$postagem['id'],'Excluir'); ?> </td>
                 </tr>
 
               

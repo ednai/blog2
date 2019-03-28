@@ -57,3 +57,6 @@ $route['postagem-index'] = "PostagemController/index";
 $route['postagem-visualizar/(:num)'] = "PostagemController/visualizar/$1";
 $route['postagem-novo'] = "PostagemController/novo";
 $route['postagem-salvar'] = "PostagemController/salvar";
+$route['postagem-editar/(:num)'] = "PostagemController/editar/$1";
+$route['postagem-atualizar'] = "PostagemController/atualizar";
+$route['postagem-excluir/(:num)'] = "PostagemController/excluir/$1";
